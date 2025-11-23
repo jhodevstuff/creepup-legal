@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreepUp - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1d1d1f;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        h2 {
+            color: #1d1d1f;
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        h3 {
+            color: #424245;
+            font-size: 1.2em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #424245;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #424245;
+        }
+        .highlight {
+            background: #f0f9ff;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .last-updated {
+            color: #86868b;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #d2d2d7;
+            color: #86868b;
+            font-size: 0.9em;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .summary {
+            background: #f0f9ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: November 2024</p>
+
+        <div class="summary">
+            <strong>SUMMARY:</strong> CreepUp is a privacy-focused app. All data stays on YOUR device. We do not collect, access, or transmit any of your data. You have complete control over your information.
+        </div>
+
+        <h2>1. INTRODUCTION</h2>
+        <p>CreepUp ("we", "our", "the app") is committed to protecting your privacy. This Privacy Policy explains how our app collects, uses, and stores data.</p>
+
+        <div class="highlight">
+            <strong>IMPORTANT:</strong> CreepUp is a privacy-focused app that stores ALL data locally on your device. We do not operate any servers, do not collect any analytics, and do not transmit any data to third parties.
+        </div>
+
+        <h2>2. DATA COLLECTION</h2>
+
+        <h3>2.1 BLUETOOTH DATA</h3>
+        <p>The app scans for Bluetooth Low Energy (BLE) devices in your environment and collects:</p>
+        <ul>
+            <li>Device names (as broadcast by the devices)</li>
+            <li>Signal strength (RSSI)</li>
+            <li>Device identifiers</li>
+            <li>Manufacturer information (from public Bluetooth Company ID database)</li>
+            <li>Service information (from public Bluetooth Service UUID database)</li>
+        </ul>
+        <p>This data is collected locally on your device and is never transmitted to us or any third party.</p>
+
+        <h3>2.2 LOCATION DATA</h3>
+        <p>If you grant location permission, the app collects:</p>
+        <ul>
+            <li>GPS coordinates when devices are discovered</li>
+            <li>Location names (via Apple's reverse geocoding)</li>
+        </ul>
+        <p>Location data is:</p>
+        <ul>
+            <li>Stored locally on your device only</li>
+            <li>Used to display devices on the map view</li>
+            <li>Never transmitted to us or any third party</li>
+            <li>Optional - the app functions without location access</li>
+        </ul>
+
+        <h3>2.3 ESP32 HARDWARE DATA</h3>
+        <p>If you connect an ESP32 companion device, the app receives:</p>
+        <ul>
+            <li>Bluetooth device information from ESP32</li>
+            <li>WiFi network information from ESP32 (network names, signal strength)</li>
+            <li>ESP32 device status information</li>
+        </ul>
+        <p>This data is:</p>
+        <ul>
+            <li>Transmitted only between your ESP32 device and your iPhone via Bluetooth</li>
+            <li>Stored locally on your device only</li>
+            <li>Never sent to any server or third party</li>
+        </ul>
+
+        <h2>3. HOW WE USE YOUR DATA</h2>
+        <p>All data is used ONLY on your device for:</p>
+        <ul>
+            <li>Displaying discovered devices in the app</li>
+            <li>Triggering proximity alerts</li>
+            <li>Showing devices on the radar visualization</li>
+            <li>Mapping devices on the GPS map</li>
+            <li>Providing device statistics and history</li>
+        </ul>
+        <p>We do NOT:</p>
+        <ul>
+            <li>Upload data to any server</li>
+            <li>Share data with third parties</li>
+            <li>Use data for analytics or advertising</li>
+            <li>Access your data in any way</li>
+        </ul>
+
+        <h2>4. DATA STORAGE</h2>
+        <p>All data is stored locally on your device using:</p>
+        <ul>
+            <li>CoreData (Apple's local database framework)</li>
+            <li>UserDefaults (for app settings)</li>
+        </ul>
+        <p>Data is stored in your app's sandbox and is:</p>
+        <ul>
+            <li>Not accessible to other apps</li>
+            <li>Backed up with your iPhone backup (if enabled)</li>
+            <li>Deleted when you delete the app</li>
+        </ul>
+
+        <h2>5. DATA EXPORT</h2>
+        <p>You can manually export your collected data in CSV format for analysis tools.</p>
+        <p>When you export data, YOU control where it goes. We do not receive or process exported data.</p>
+
+        <h2>6. DATA SHARING</h2>
+        <p>We do NOT share any data with third parties because we do not have access to your data.</p>
+        <p>The only data transmission occurs:</p>
+        <ul>
+            <li>Between your iPhone and connected ESP32 device (via local Bluetooth)</li>
+            <li>When you manually export data to apps of your choice</li>
+        </ul>
+
+        <h2>7. THIRD-PARTY SERVICES</h2>
+        <p>CreepUp does NOT use any third-party services, including:</p>
+        <ul>
+            <li>No analytics (no Google Analytics, Firebase, etc.)</li>
+            <li>No advertising networks</li>
+            <li>No crash reporting services</li>
+            <li>No cloud services</li>
+        </ul>
+        <p>The app uses only Apple's built-in frameworks:</p>
+        <ul>
+            <li>CoreBluetooth (for BLE scanning)</li>
+            <li>CoreLocation (for GPS)</li>
+            <li>CoreData (for local storage)</li>
+            <li>MapKit (for maps)</li>
+        </ul>
+
+        <h2>8. PERMISSIONS</h2>
+
+        <h3>8.1 BLUETOOTH PERMISSION</h3>
+        <p>Required for core functionality (BLE device scanning). The app cannot function without this permission.</p>
+
+        <h3>8.2 LOCATION PERMISSION</h3>
+        <p>Optional - only needed for GPS-based device mapping. You can use the app without granting location access (List and Radar views work without location).</p>
+
+        <h3>8.3 NOTIFICATION PERMISSION</h3>
+        <p>Optional - only needed for proximity alerts. You can use the app without notifications.</p>
+
+        <h2>9. DATA RETENTION</h2>
+        <p>Data is retained:</p>
+        <ul>
+            <li>Indefinitely on your device (until you delete it)</li>
+            <li>You can delete individual devices or runs from the app</li>
+            <li>All data is deleted when you uninstall the app</li>
+        </ul>
+
+        <h2>10. CHILDREN'S PRIVACY</h2>
+        <p>CreepUp is not intended for children under 13. We do not knowingly collect data from children.</p>
+
+        <h2>11. SECURITY</h2>
+        <p>Your data security is important to us:</p>
+        <ul>
+            <li>All data stays on your device</li>
+            <li>Data is protected by iOS security measures</li>
+            <li>No internet transmission of data</li>
+            <li>No server-side data storage</li>
+        </ul>
+
+        <h2>12. YOUR RIGHTS</h2>
+        <p>You have full control over your data:</p>
+        <ul>
+            <li>View all collected data in the app</li>
+            <li>Delete individual entries</li>
+            <li>Delete all data (via app reset)</li>
+            <li>Export data to external tools</li>
+            <li>Revoke permissions at any time</li>
+        </ul>
+
+        <h2>13. CHANGES TO THIS POLICY</h2>
+        <p>We may update this Privacy Policy. Changes will be posted in the app and on our website. Continued use of the app after changes constitutes acceptance of the new policy.</p>
+
+        <h2>14. LEGAL BASIS (GDPR)</h2>
+        <p>For EU users, data processing is based on:</p>
+        <ul>
+            <li>Legitimate interest (personal safety and security monitoring)</li>
+            <li>Consent (for optional features like location)</li>
+            <li>All processing occurs locally on your device</li>
+        </ul>
+
+        <h2>15. CONTACT</h2>
+        <p>For privacy questions or concerns:</p>
+        <ul>
+            <li>Email: <a href="mailto:creepup@joshua-hoffmann.de">creepup@joshua-hoffmann.de</a></li>
+            <li>Developer: Joshua Hoffmann</li>
+            <li>ESP32 Firmware: <a href="https://jhodevstuff.github.io/creepup-esp" target="_blank">github.io/jhodevstuff/creepup-esp</a></li>
+        </ul>
+
+        <h2>16. JURISDICTION</h2>
+        <p>This privacy policy is governed by German and European Union laws.</p>
+
+        <div class="footer">
+            <p><strong>CreepUp - Bluetooth Security Monitor</strong></p>
+            <p>&copy; 2024 Joshua Hoffmann. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
